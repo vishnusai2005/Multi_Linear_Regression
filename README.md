@@ -275,10 +275,10 @@ jupyter notebook Medical_insurence.ipynb
 | Limitation | Suggested Fix |
 |---|---|
 | Linear model may miss interaction terms (e.g., BMI × smoker) | Add `PolynomialFeatures` or explicit interaction columns |
-| LOFO feature importance incomplete | Implement Leave-One-Feature-Out loop to measure ΔR² per feature |
-| No cross-validation | Add K-Fold CV for more robust R² estimates |
-| Potential heteroscedasticity remains | Try Ridge/Lasso regularization or Quantile Regression |
-| Outlier charges (>$50,000) may distort predictions | Apply IQR-based outlier capping before modeling |
+| LOFO feature importance incomplete | Implementing Leave-One-Feature-Out loop to measure ΔR² per feature |
+| No cross-validation | Adding K-Fold CV for more robust R² estimates |
+| Potential heteroscedasticity remains | Trying Ridge/Lasso regularization or Quantile Regression |
+| Outlier charges (>$50,000) may distort predictions | Applying IQR-based outlier capping before modeling |
 | Region has near-zero impact | Consider dropping region to simplify the model |
 | Tree-based models not explored | Try Decision Tree, Random Forest, XGBoost for non-linear capture |
 
